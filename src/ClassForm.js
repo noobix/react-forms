@@ -9,7 +9,7 @@ class Form extends React.Component{
             password:"",
         }
     }
-    handlesubmit = (event) =>{
+    handleSubmit = (event) =>{
         event.preventDefault()
         console.log(this.state.name)
         console.log(this.state.email)
@@ -27,7 +27,7 @@ class Form extends React.Component{
     render(){
         return(
             <>
-                <form onSubmit={this.handlesubmit}>
+                <form onSubmit={this.handleSubmit}>
                     <label>Name</label>
                     <input type="text" onChange={this.handleNameChange}></input>
                     <br/>
